@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %> 
+  <body>
+    <%- include('partials/header') %>
+    <main>
+      <section class="homeServices">
+        <div class="textBox box border">
+          <h2 class="subtitle">Balloons Arrangements</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero distinctio ab magnam sit ex eius doloribus dicta sunt totam odio iste placeat enim, inventore voluptates error sed fugiat excepturi veniam veritatis eveniet earum. Voluptatem tempora labore odio quaerat obcaecati.</p>
+          <a href="/services" class="btn">See all <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="imageBox box border"></div>
+      </section>
+      <section class="photos border">
+        <h2 class="subtitle">Our Work</h2>
+        <div class="photosContainer">
+          <div class="columnA column">
+            <img src="/images/014.jpg" alt="">
+            <img src="/images/007.jpg" alt="">
+            <img src="/images/005.jpg" alt="">
+            <img src="/images/008.jpg" alt="">
+          </div>
+          <div class="columnB column">
+            <img src="/images/009.jpg" alt="">
+            <img src="/images/006.jpg" alt="">
+            <img src="/images/011.jpg" alt="">
+          </div>
+          <div class="columnC column">
+            <img src="/images/016.jpg" alt="">
+            <img src="/images/012.jpg" alt="">
+            <img src="/images/013.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="subscribe border">
+        <form action="">
+          <label for="email" class="subtitle">Subscribe to our newsletter:</label>
+          <input type="email" name="email" id="email" placeholder="Your email here...">
+          <button class="btn">Subscribe</button>
+        </form>
+      </section>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

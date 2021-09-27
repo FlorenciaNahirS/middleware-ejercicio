@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+
+body{
+    color: var(--lightPrimary);
+}
+
+a{text-decoration: none;}
+
+li{list-style: none;}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+.logo,.subtitle{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.btn{
+    width: 150px;
+    padding: 6px 12px;
+    border: 2px solid #000;
+    transition: background-color .5s, color .5s;
+    text-align:center;
+    background-color: #fff;
+    cursor: pointer;
+    display:block;
+}
+
+.btn i{
+    margin: 0 0 0 5px;
+    transition:color .5s;
+}
+
+.btn:hover{
+    background-color:#000;
+    color: #fff;
+}
+
+.btn:hover i{
+    color: #fff;
+}
+
+.border{
+    border: 2px solid #000;
+    border-top: none;
+}
+
+/*--Forms--*/
+
+.form{
+    width: 94%;
+    height:45vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+}
+
+.form form{
+    width: 80%;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.input label{
+    display:block;
+    font-family: 'Abril Fatface', cursive;
+    margin: 20px 0 5px;
+}
+
+.input:first-child label{
+    margin: 0 0 5px;
+}
+
+.input input, .input textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+.input textarea{
+    height:100px;
+    padding: 5px;
+}
+
+.form .btn{
+    margin: 20px auto 0;
+}
+
+.form .textForm{
+    margin: 10px 0 0;
+    text-align:center;
+}
+
+.form .textForm a{
+    font-weight: 800;
+}
+
+/*---MEDIA QUERY---*/
+
+@media (min-width : 768px){
+    .form form{
+        width: 70%;
+    }
+}
+
+@media (min-width : 1024px){
+    .form{
+        width: 90%;
+        margin: 0 auto;
+        height:auto;
+        display:block;
+    }
+
+    .form form{
+        width: 50%;
+    }
+}

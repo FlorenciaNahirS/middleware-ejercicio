@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %> 
+  <body>
+    <%- include('partials/header') %>
+    <main class="border">
+        <h2 class="subtitle" style="text-align: center; padding: 30px 0;">Tell us your idea</h2>
+        <div class="form">
+            <form action="">
+                <div class="input">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input">
+                    <label for="comment">Your comment:</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
